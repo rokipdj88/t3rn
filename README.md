@@ -1,5 +1,9 @@
 # 👉 T3RN Executor Automation installation one click
 
+
+Official : [https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
+
+
 ## ⚠️ Important Notes
 
 T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
@@ -53,7 +57,7 @@ wget https://github.com/rokipdj88/t3rn/raw/main/t3rn.sh -O t3rn.sh && chmod +x t
 
 ## 📝 DOCUMENT GUIDE
 
-Manual Official : [T3rn Executor]([https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup))
+Manual Official : [T3rn Executor]([https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
 
 
 ## 🎨 Understanding the Colors
