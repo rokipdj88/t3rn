@@ -3,7 +3,9 @@
 ## ⚠️ Important Notes
 
 T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
+
 Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/explorer/orders)
+
 BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
 
 Min Balance untuk run executor:
