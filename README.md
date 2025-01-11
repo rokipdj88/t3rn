@@ -16,17 +16,17 @@ Min Balance untuk run executor:
 
 Bridge:
 
-🔴 [SEPO to ARB SEPO : ](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
+🔴 SEPO to ARB SEPO : [https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
 
-🔴 [SEPO to BASE SEPO : ](https://superbridge.app/base-sepolia)
+🔴 SEPO to BASE SEPO : [https://superbridge.app/base-sepolia](https://superbridge.app/base-sepolia)
 
-🔴 [SEPO to OPT SEPO : ](https://superbridge.app/op-sepolia)
+🔴 SEPO to OPT SEPO : [https://superbridge.app/op-sepolia](https://superbridge.app/op-sepolia)
 
 🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
 
 
 
-⚠️ JANGAN LUPA AMBIL ROLE EXECUTOR [DISCORD](https://discord.gg/vkvG3Uwd)
+⚠️ JANGAN LUPA AMBIL ROLE EXECUTOR DISCORD[https://discord.gg/vkvG3Uwd](https://discord.gg/vkvG3Uwd)
 
 ## ✨ AUTO INSTALLATION
 
