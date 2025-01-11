@@ -3,16 +3,25 @@
 ## ⚠️ Important Notes
 
 Min Balance untuk run executor:
+
 🔴 T3rn = 0.1 BRN Swap or Skip
+
 🔴 ARB SEPO = 2 ETH
+
 🔴 BASE SEPO = 2 ETH
+
 🔴 OPT SEPO = 2 ETH
+
 🔴 BLAST SEPO = 2 ETH
 
 Bridge:
+
 🔴 [SEPO to ARB SEPO : ](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
+
 🔴 [SEPO to BASE SEPO : ](https://superbridge.app/base-sepolia)
+
 🔴 [SEPO to OPT SEPO : ](https://superbridge.app/op-sepolia)
+
 🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
 
 
