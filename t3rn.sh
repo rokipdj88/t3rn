@@ -2,12 +2,12 @@
 # Logo Teks Menarik
 echo "#######################################"
 echo "#                                     #"
-echo "#            M A J I K A Y O         #"
+echo "#            M A J I K A Y O          #"
 echo "#                                     #"
 echo "#######################################"
 echo "\nWelcome to the installation script!\n"
 echo "==============================================="
-echo "BELI VPS DI TELEGRAM STORE : @candrapn"
+echo "BELI VPS ALIBABA 40K DI STORE t.me/candrapn"
 echo "==============================================="
 
 # Jeda 5 detik
