@@ -7,7 +7,7 @@ echo "#                                     #"
 echo "#######################################"
 echo "\nWelcome to the installation script!\n"
 echo "==============================================="
-echo "BELI VPS DI @candrapn"
+echo "BELI VPS DI TELEGRAM STORE : @candrapn"
 echo "==============================================="
 
 # Jeda 5 detik
@@ -17,6 +17,8 @@ sleep 5
 wget https://github.com/t3rn/executor-release/releases/download/v0.33.0/executor-linux-v0.33.0.tar.gz
 #extrack boy
 tar -xzvf executor-linux-v0.33.0.tar.gz
+
+sleep 5
 # Pindah ke direktori executor
 cd executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
 
