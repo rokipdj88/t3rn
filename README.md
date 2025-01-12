@@ -1,6 +1,8 @@
 # 👉 T3RN Executor Automation installation one click
+      
+  Update V0.33.0
 
-
+  
 Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
 
 
