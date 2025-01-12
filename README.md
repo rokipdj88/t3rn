@@ -1,7 +1,7 @@
 # 👉 T3RN Executor Automation installation one click
 
 
-Official : [https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://titannet.gitbook.io/titan-network-en/resource-network-test/operate-nodes/l2-edge-node/installation-and-earnings](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
+Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup]
 
 
 ## ⚠️ Important Notes
@@ -14,7 +14,7 @@ BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.
 
 Min Balance untuk run executor:
 
-🔴 T3rn = 0.1 BRN Swap
+🔴 T3rn = 1 BRN Swap
 
 🔴 ARB SEPO = 2 ETH
 
