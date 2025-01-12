@@ -13,18 +13,18 @@ echo "==============================================="
 # Jeda 5 detik
 sleep 5
 
-#download file executor baru v 0.33.0
+# Download file executor baru v 0.33.0
 wget https://github.com/t3rn/executor-release/releases/download/v0.33.0/executor-linux-v0.33.0.tar.gz
-#extrack boy
+# Ekstrak file
 tar -xzvf executor-linux-v0.33.0.tar.gz
 
 sleep 5
 # Pindah ke direktori executor
 cd executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
 
-# Minta input dari pengguna untuk PRIVATE_KEY_LOCAL
+# Minta input dari pengguna untuk PRIVATE_KEY_LOCAL (terlihat saat diketik)
 echo -n "Masukkan PRIVATE KEY: "
-read -s PRIVATE_KEY_LOCAL  # Input rahasia (tidak terlihat saat diketik)
+read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
 echo  # Baris baru setelah input
 
 # Set variabel lingkungan
