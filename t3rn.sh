@@ -42,7 +42,7 @@ read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
 echo "PRIVATE KEY Anda: $PRIVATE_KEY_LOCAL"
 
 # Meminta input manual untuk EXECUTOR_MAX_L3_GAS_PRICE
-echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default (GWEI10) 100): "
+echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default 100): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 
 # Jika tidak diisi, gunakan nilai default 10
