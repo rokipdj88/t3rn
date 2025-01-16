@@ -24,7 +24,7 @@ sleep 3
 echo -e "Mendownload versi terbaru executor-linux-v0.36.0.tar.gz"
 echo
 mkdir -p t3rn
-cd t3rn
+cd $HOME/t3rn
 
 # Mengunduh rilis terbaru executor
 curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
@@ -35,7 +35,7 @@ xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/e
 tar -xzf executor-linux-*.tar.gz
 
 # Berpindah ke direktori binary executor
-cd executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
+cd $HOME/t3rn/executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
 
 # Meminta input manual untuk PRIVATE_KEY_LOCAL
 echo -n "Masukkan PRIVATE KEY: "
