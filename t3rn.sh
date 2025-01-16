@@ -11,8 +11,10 @@ echo -e ' ██║╚██╔╝██║ ██╔══██║  ██║ 
 echo -e ' ██║ ╚═╝ ██║ ██║  ██║   █████╔╝ ██║ ██║  ██╗ ██║  ██║    ██║    █████╔╝'
 echo -e ' ╚═╝     ╚═╝ ╚═╝  ╚═╝   ╚════╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝    ╚════╝'
 echo -e "${NC}"
+echo -e "Join our Telegram channel: https://t.me/NTExhaust"
+echo -e "${RED}"
+echo -e '-----------------------------------------------------'
 echo -e "Buy VPS 40K on Telegram Store: https://t.me/candrapn"
-echo -e "-----------------------------------------------------"
 sleep 5
 
 # Menghapus file executor lama jika ada
