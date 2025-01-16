@@ -34,7 +34,7 @@ xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/e
 tar -xzf executor-linux-*.tar.gz
 
 # Berpindah ke direktori binary executor
-cd executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
+cd t3rn/executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
 
 # Meminta input manual untuk PRIVATE_KEY_LOCAL
 echo -n "Masukkan PRIVATE KEY: "
