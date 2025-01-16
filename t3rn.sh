@@ -17,8 +17,8 @@ sleep 5
 
 # Menghapus file executor lama jika ada
 echo
-echo -e "Menghapus Versi 0.33.0"
-rm executor-linux-v0.33.0.tar.gz & rm -rf executor
+echo -e "Menghapus versi Sebelumnya "
+rm executor-linux-v0.33.0.tar.gz & xecutor-linux-v0.35.0.tar.gz & rm -rf executor
 sleep 3
 echo -e "Mendownload versi terbaru executor-linux-v0.35.0.tar.gz"
 echo
@@ -42,12 +42,12 @@ read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
 echo "PRIVATE KEY Anda: $PRIVATE_KEY_LOCAL"
 
 # Meminta input manual untuk EXECUTOR_MAX_L3_GAS_PRICE
-echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default 10): "
+echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default (GWEI10) 100): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 
 # Jika tidak diisi, gunakan nilai default 10
 if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
-  EXECUTOR_MAX_L3_GAS_PRICE=10
+  EXECUTOR_MAX_L3_GAS_PRICE=100
 fi
 
 echo "GAS PRICE yang digunakan: $EXECUTOR_MAX_L3_GAS_PRICE"
