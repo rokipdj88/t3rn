@@ -1,6 +1,6 @@
 # 👉 T3RN Executor Automation installation one click
       
-# UPDATED T3RN Executor Version executor-linux-v0.35.0.tar.gz
+# 🟢 T3RN Executor version executor-linux-v0.36.0.tar.gz - Latest
 
   
 Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
