@@ -38,8 +38,8 @@ cd executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
 
 # Meminta input manual untuk PRIVATE_KEY_LOCAL
 echo -n "Masukkan PRIVATE KEY: "
-read -s PRIVATE_KEY_LOCAL  # Input PRIVATE KEY disembunyikan
-echo
+read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
+echo "PRIVATE KEY Anda: $PRIVATE_KEY_LOCAL"
 
 # Meminta input manual untuk EXECUTOR_MAX_L3_GAS_PRICE
 echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default 10): "
@@ -50,8 +50,7 @@ if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
   EXECUTOR_MAX_L3_GAS_PRICE=10
 fi
 
-echo
-echo "Nilai GAS PRICE yang digunakan: $EXECUTOR_MAX_L3_GAS_PRICE"
+echo "GAS PRICE yang digunakan: $EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menyiapkan variabel lingkungan
 export NODE_ENV=testnet
