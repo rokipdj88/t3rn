@@ -45,7 +45,7 @@ echo "PRIVATE KEY Anda: $PRIVATE_KEY_LOCAL"
 echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default 100): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 
-# Jika tidak diisi, gunakan nilai default 10
+# Jika tidak diisi, gunakan nilai default 100
 if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
   EXECUTOR_MAX_L3_GAS_PRICE=100
 fi
