@@ -57,6 +57,8 @@ wget https://github.com/rokipdj88/t3rn/raw/main/t3rn.sh -O t3rn.sh && chmod +x t
 
 - 🔐 Input PrivateKey
 
+- 🟠 Set Gwei, by default gwei is 10=100 ini value
+
 ## 📝 DOCUMENT GUIDE
 
 Manual Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
