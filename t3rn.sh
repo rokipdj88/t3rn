@@ -66,7 +66,7 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-se
 export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
 export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-export RPC_ENDPOINTS_L1RN='https://brn.calderarpc.com/'
+# export RPC_ENDPOINTS_L1RN='https://brn.calderarpc.com/'
 
 # Menjalankan executor
 echo -e "Menjalankan executor dengan konfigurasi saat ini..."
