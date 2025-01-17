@@ -21,10 +21,10 @@ sleep 5
 # Menghapus file executor lama jika ada
 echo
 echo -e "Menghapus versi Sebelumnya "
-rm executor-linux-v0.35.0.tar.gz
+rm executor-linux-v0.36.0.tar.gz
 rm -rf t3rn
 sleep 3
-echo -e "Mendownload versi terbaru executor-linux-v0.36.0.tar.gz"
+echo -e "Mendownload versi terbaru executor-linux-v0.38.0.tar.gz"
 echo
 mkdir -p t3rn
 cd $HOME/t3rn
