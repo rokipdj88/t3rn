@@ -24,16 +24,15 @@ echo -e "Menghapus versi Sebelumnya "
 rm executor-linux-v0.36.0.tar.gz
 rm -rf t3rn
 sleep 3
-echo -e "Mendownload versi terbaru executor-linux-v0.36.0.tar.gz"
+echo -e "Mendownload versi terbaru executor-linux-v0.38.0.tar.gz"
 echo
 mkdir -p t3rn
 cd $HOME/t3rn
 
 # Mengunduh rilis terbaru executor
-#curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
-#grep -Po '"tag_name": "\K.*?(?=")' | \
-#xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
-curl -L -o executor-linux-v0.36.0.tar.gz https://github.com/t3rn/executor-release/releases/download/v0.36.0/executor-linux-v0.36.0.tar.gz
+curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
+grep -Po '"tag_name": "\K.*?(?=")' | \
+xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
 # Mengekstrak arsip
 tar -xzf executor-linux-*.tar.gz
 
