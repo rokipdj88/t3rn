@@ -1,8 +1,8 @@
-<img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/a3517e03-fa7e-4fa5-998a-decc188e3fea" /># 👉 T3RN Executor Automation installation one click
+# 👉 T3RN Executor Automation installation one click
       
  T3RN Executor version executor-linux-v0.41.0.tar.gz - Latest
 
-⚠️ PAKAI ALCHEMY API KEY UNTUK RPC
+⚠️ Menggunakan ALCHEMY API KEY untuk RPC
       GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
       
       Untuk menggunakan fitur tertentu dari skrip ini, Anda mungkin memerlukan kunci API Alchemy. Ikuti langkah-langkah berikut untuk mendapatkannya:
@@ -16,7 +16,7 @@
 EXAMPLE :
 <img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/23f1fa1d-0f22-4fc6-af71-c8f03217262c" />
 
-SILAKAN SKIP/ENTER JIKA TIDAK INGIN MENGGUNAKAN API ALCHEMY
+SILAKAN SKIP/ENTER JIKA TIDAK INGIN MENGGUNAKAN API ALCHEMY (Default)
 
       
   
