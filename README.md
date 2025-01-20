@@ -1,4 +1,4 @@
-# 👉 T3RN Executor Automation installation one click
+<img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/a3517e03-fa7e-4fa5-998a-decc188e3fea" /># 👉 T3RN Executor Automation installation one click
       
  T3RN Executor version executor-linux-v0.41.0.tar.gz - Latest
 
@@ -13,6 +13,9 @@
             Click on "Create App" and provide the required details (e.g., app name, description, and network).
       4. Once the app is created, you will see the API key in the app details.
       5. Copy the API key and use it as needed in the script.
+EXAMPLE :
+<img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/23f1fa1d-0f22-4fc6-af71-c8f03217262c" />
+
       
   
 Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
