@@ -1,7 +1,18 @@
 # 👉 T3RN Executor Automation installation one click
       
-# 🟢 T3RN Executor version executor-linux-v0.38.0.tar.gz - Latest
+ T3RN Executor version executor-linux-v0.41.0.tar.gz - Latest
 
+⚠️ USING ALCHEMY API KEY FOR RPC
+      GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
+      To use certain features of this script, you may need an Alchemy API key. Follow these steps to get one:
+      1. Go to the Alchemy website.
+      2. Sign up for an account or log in if you already have one.
+      3. Create a new app:
+            Navigate to the "Apps" section in your dashboard.
+            Click on "Create App" and provide the required details (e.g., app name, description, and network).
+      4. Once the app is created, you will see the API key in the app details.
+      5. Copy the API key and use it as needed in the script.
+      
   
 Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
 
