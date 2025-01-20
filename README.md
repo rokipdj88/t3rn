@@ -2,19 +2,21 @@
       
  T3RN Executor version executor-linux-v0.41.0.tar.gz - Latest
 
-⚠️ USING ALCHEMY API KEY FOR RPC
+⚠️ PAKAI ALCHEMY API KEY UNTUK RPC
       GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
       
-      To use certain features of this script, you may need an Alchemy API key. Follow these steps to get one:
-      1. Go to the Alchemy website.
-      2. Sign up for an account or log in if you already have one.
-      3. Create a new app:
-            Navigate to the "Apps" section in your dashboard.
-            Click on "Create App" and provide the required details (e.g., app name, description, and network).
-      4. Once the app is created, you will see the API key in the app details.
-      5. Copy the API key and use it as needed in the script.
+      Untuk menggunakan fitur tertentu dari skrip ini, Anda mungkin memerlukan kunci API Alchemy. Ikuti langkah-langkah berikut untuk mendapatkannya:
+	1.	Kunjungi situs web Alchemy.
+	2.	Daftar akun atau masuk jika Anda sudah memiliki akun.
+	3.	Buat aplikasi baru:
+	      • Masuk ke bagian “Apps” di dashboard Anda.
+	      • Klik “Create App” dan isi detail yang diperlukan (misalnya, nama aplikasi, deskripsi, dan jaringan).
+	4.	Setelah aplikasi berhasil dibuat, Anda akan melihat kunci API di detail aplikasi.
+	5.	Salin kunci API tersebut dan gunakan sesuai kebutuhan dalam skrip Anda.
 EXAMPLE :
 <img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/23f1fa1d-0f22-4fc6-af71-c8f03217262c" />
+
+SILAKAN SKIP/ENTER JIKA TIDAK INGIN MENGGUNAKAN API ALCHEMY
 
       
   
