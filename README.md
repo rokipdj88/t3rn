@@ -55,7 +55,7 @@ Bridge:
 
 
 
-⚠️ JANGAN LUPA AMBIL ROLE EXECUTOR DISCORD[https://discord.gg/vkvG3Uwd](https://discord.gg/vkvG3Uwd)
+⚠️ JANGAN LUPA AMBIL ROLE EXECUTOR DISCORD[JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
 
 ## ✨ AUTO INSTALLATION
 
