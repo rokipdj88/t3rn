@@ -1,29 +1,27 @@
-# 👉 T3RN Executor Automation installation one click
+## 👉 T3RN Executor Automation Installation One Click
       
- T3RN Executor AUTO UPDATE (RERUN SCRIPT) - Latest
+ # T3RN Executor AUTO UPDATE ( RERUN SCRIPT FOR UPDATE ) - Latest
 
-⚠️ Menggunakan ALCHEMY API KEY untuk RPC
-      GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
+⚠️ Custom RPC Alchemy
+
+GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
       
-      Untuk menggunakan fitur tertentu dari skrip ini, Anda mungkin memerlukan kunci API Alchemy. Ikuti langkah-langkah berikut untuk mendapatkannya:
-	1.	Kunjungi situs web Alchemy.
-	2.	Daftar akun atau masuk jika Anda sudah memiliki akun.
-	3.	Buat aplikasi baru:
-	      • Masuk ke bagian “Apps” di dashboard Anda.
-	      • Klik “Create App” dan isi detail yang diperlukan (misalnya, nama aplikasi, deskripsi, dan jaringan).
-	4.	Setelah aplikasi berhasil dibuat, Anda akan melihat kunci API di detail aplikasi.
-	5.	Salin kunci API tersebut dan gunakan sesuai kebutuhan dalam skrip Anda.
-EXAMPLE :
-<img width="1187" alt="Screenshot 2025-01-20 at 21 16 18" src="https://github.com/user-attachments/assets/23f1fa1d-0f22-4fc6-af71-c8f03217262c" />
-
-SILAKAN SKIP/ENTER JIKA TIDAK INGIN MENGGUNAKAN API ALCHEMY (Default)
-
-      
-  
-Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
+     To use certain features of this script, you may need an Alchemy API key. Follow these steps to get one:
+	1. Visit the Alchemy website.
+	2. Sign up for an account or sign in if you already have one.
+	3. Create a new app:
+	• Go to the “Apps” section of your dashboard.
+	• Click “Create App” and fill in the required details (e.g. app name, description, and add network(op,base,blast,arb).
+	4. Once the app is successfully created, you will see the API key in the app details.
+	5. Copy the API key and use it as needed in your script.
+# EXAMPLE :
+# <img width="1187" alt="404910629-23f1fa1d-0f22-4fc6-af71-c8f03217262c" src="https://github.com/user-attachments/assets/4eefb56c-8828-409a-acd1-aa882b85268e" />
 
 
-## ⚠️ Important Notes
+# Skip Alchemy RPC just press Enter (Default RPC)
+
+
+# ⚠️ Important Notes
 
 T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
 
@@ -31,42 +29,42 @@ Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/e
 
 BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
 
-Min Balance untuk run executor:
+	Minimum Balance for Executor:
 
-🔴 T3rn = 1 BRN Swap
+	🔴 T3rn = 1 BRN
 
-🔴 ARB SEPO = 2 ETH
+	🔴 ARB SEPO = 2 ETH
 
-🔴 BASE SEPO = 2 ETH
+	🔴 BASE SEPO = 2 ETH
 
-🔴 OPT SEPO = 2 ETH
+	🔴 OPT SEPO = 2 ETH
 
-🔴 BLAST SEPO = 2 ETH
+	🔴 BLAST SEPO = 2 ETH
 
 Bridge:
 
-🔴 SEPO to ARB SEPO : [https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
+	🔴 SEPO to ARB SEPO : [https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
 
-🔴 SEPO to BASE SEPO : [https://superbridge.app/base-sepolia](https://superbridge.app/base-sepolia)
+	🔴 SEPO to BASE SEPO : [https://superbridge.app/base-sepolia](https://superbridge.app/base-sepolia)
 
-🔴 SEPO to OPT SEPO : [https://superbridge.app/op-sepolia](https://superbridge.app/op-sepolia)
+	🔴 SEPO to OPT SEPO : [https://superbridge.app/op-sepolia](https://superbridge.app/op-sepolia)
 
-🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
+	🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
 
 
 
-⚠️ JANGAN LUPA AMBIL ROLE EXECUTOR DISCORD[JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
+⚠️ Go to Discord and get Executor Role [JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
 
-## ✨ AUTO INSTALLATION
+# ✨ AUTO INSTALLATION
 
-## Cara Menjalankan Script
+How to run Script
 
-Bikin Screen terlebih dahulu
+Create Screen
 ```bash
 screen -S t3rn
 ```
 
-Salin dan tempel perintah berikut di terminal Anda:
+copy and paste into your terminal :
 
 ```bash
 wget https://github.com/rokipdj88/t3rn/raw/main/t3rn.sh -O t3rn.sh && chmod +x t3rn.sh && ./t3rn.sh
@@ -74,14 +72,15 @@ wget https://github.com/rokipdj88/t3rn/raw/main/t3rn.sh -O t3rn.sh && chmod +x t
 
 - 🔐 Input PrivateKey
 
-- 🟠 Set Gwei, by default gwei is 10=100 value
+- 🟠 Set your Gas Fee, by default is 100
 
-## 📝 DOCUMENT GUIDE
+# 📝 DOCUMENT GUIDE
 
-Manual Official : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
+Manual installation Official : [Official T3rn Docs](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
 
 
-## 🎨 Understanding the Colors
+
+# 🎨 Understanding the Colors
 
 The tool uses a variety of colors to make the output easy to read:
 
@@ -93,7 +92,7 @@ The tool uses a variety of colors to make the output easy to read:
 - 🟠 Cyan: Balance information
 
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/t3rn/issues) if you want to contribute.
 
