@@ -1,10 +1,10 @@
-## 👉 T3RN Executor Automation Installation One Click
+# 👉 T3RN Executor Automation Installation One Click
       
- # T3RN Executor AUTO UPDATE ( RERUN SCRIPT FOR UPDATE ) - Latest
+ ## T3RN Executor AUTO UPDATE ( RERUN SCRIPT FOR UPDATE ) - Latest
 
-⚠️ Custom RPC Alchemy
+##⚠️ Custom RPC Alchemy
 
-GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
+## GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
       
      To use certain features of this script, you may need an Alchemy API key. Follow these steps to get one:
 	1. Visit the Alchemy website.
@@ -14,14 +14,14 @@ GO TO : [https://www.alchemy.com/](https://www.alchemy.com/)
 	• Click “Create App” and fill in the required details (e.g. app name, description, and add network(op,base,blast,arb).
 	4. Once the app is successfully created, you will see the API key in the app details.
 	5. Copy the API key and use it as needed in your script.
-# EXAMPLE :
-# <img width="1187" alt="404910629-23f1fa1d-0f22-4fc6-af71-c8f03217262c" src="https://github.com/user-attachments/assets/4eefb56c-8828-409a-acd1-aa882b85268e" />
+## EXAMPLE :
+## <img width="1187" alt="404910629-23f1fa1d-0f22-4fc6-af71-c8f03217262c" src="https://github.com/user-attachments/assets/4eefb56c-8828-409a-acd1-aa882b85268e" />
 
 
-# Skip Alchemy RPC just press Enter (Default RPC)
+## Skip Alchemy RPC just press Enter (Default RPC)
 
 
-# ⚠️ Important Notes
+## ⚠️ Important Notes
 
 T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
 
@@ -53,9 +53,9 @@ Bridge:
 
 
 
-⚠️ Go to Discord and get Executor Role [JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
+## ⚠️ Go to Discord and get Executor Role [JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
 
-# ✨ AUTO INSTALLATION
+## ✨ AUTO INSTALLATION
 
 How to run Script
 
@@ -80,16 +80,16 @@ Manual installation Official : [Official T3rn Docs](https://docs.t3rn.io/executo
 
 
 
-# 🎨 Understanding the Colors
+## 🎨 Understanding the Colors
 
-The tool uses a variety of colors to make the output easy to read:
+##  The tool uses a variety of colors to make the output easy to read:
 
-- 🟢 Green: Successful operations
-- 🔵 Blue: General information
-- 🟡 Yellow: Warnings or important notices
-- 🔴 Red: Errors or failed operations
-- 🟣 Magenta: Highlighted information
-- 🟠 Cyan: Balance information
+## - 🟢 Green: Successful operations
+## - 🔵 Blue: General information
+## - 🟡 Yellow: Warnings or important notices
+## - 🔴 Red: Errors or failed operations
+## - 🟣 Magenta: Highlighted information
+## - 🟠 Cyan: Balance information
 
 
 # 🤝 Contributing
