@@ -26,33 +26,33 @@ EXAMPLE :
 
 ⚠️ Important Notes
 
-	T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
+T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
 
-	Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/explorer/orders)
+Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/explorer/orders)
 
-	BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
+BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
 
-	Minimum Balance for Executor:
+Minimum Balance for Executor:
 
-	🔴 T3rn = 1 BRN
+🔴 T3rn = 1 BRN
 
-	🔴 ARB SEPO = 10 ETH
+🔴 ARB SEPO = 10 ETH
 
-	🔴 BASE SEPO = 10 ETH
+🔴 BASE SEPO = 10 ETH
 
-	🔴 OPT SEPO = 10 ETH
+🔴 OPT SEPO = 10 ETH
 
-	🔴 BLAST SEPO = 10 ETH
+🔴 BLAST SEPO = 10 ETH
 
 Bridge:
 
-	🔴 SEPO to ARB SEPO : [https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
+🔴 SEPO to ARB SEPO : [https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia)
 
-	🔴 SEPO to BASE SEPO : [https://superbridge.app/base-sepolia](https://superbridge.app/base-sepolia)
+🔴 SEPO to BASE SEPO : [https://superbridge.app/base-sepolia](https://superbridge.app/base-sepolia)
 
-	🔴 SEPO to OPT SEPO : [https://superbridge.app/op-sepolia](https://superbridge.app/op-sepolia)
+🔴 SEPO to OPT SEPO : [https://superbridge.app/op-sepolia](https://superbridge.app/op-sepolia)
 
-	🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
+🔴 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
 
 
 
