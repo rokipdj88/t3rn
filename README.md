@@ -1,6 +1,7 @@
 # 👉 T3RN Executor Automation Installation One Click
       
  T3RN Executor AUTO UPDATE ( RERUN SCRIPT FOR UPDATE ) - Latest
+ 
 
 ⚠️ Custom RPC Alchemy
 
@@ -19,15 +20,17 @@ EXAMPLE :
 <img width="1187" alt="404910629-23f1fa1d-0f22-4fc6-af71-c8f03217262c" src="https://github.com/user-attachments/assets/4eefb56c-8828-409a-acd1-aa882b85268e" />
 
 
-Skip Alchemy RPC just press Enter (Default RPC)
+
+⚠️ Skip Alchemy RPC just press Enter (Default RPC)
+
 
 ⚠️ Important Notes
 
-T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
+	T3RN Swap and earn BRN [https://bridge.t1rn.io](https://bridge.t1rn.io)
 
-Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/explorer/orders)
+	Check Executor [https://bridge.t1rn.io/explorer/orders](https://bridge.t1rn.io/explorer/orders)
 
-BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
+	BRN blockchain explorer [https://brn.explorer.caldera.xyz](https://brn.explorer.caldera.xyz/)
 
 	Minimum Balance for Executor:
 
@@ -55,11 +58,10 @@ Bridge:
 
 ⚠️ Go to Discord and get Executor Role [JOIN DISCORD](https://discord.com/invite/S5kHFQTtp6)
 
-✨ AUTO INSTALLATION
+# ✨ AUTO INSTALLATION
 
-How to run Script
 
-Create Screen
+create screen
 ```bash
 screen -S t3rn
 ```
@@ -80,7 +82,7 @@ Manual installation Official : [Official T3rn Docs](https://docs.t3rn.io/executo
 
 
 
-#🎨 Understanding the Colors
+🎨 Understanding the Colors
 
 The tool uses a variety of colors to make the output easy to read:
 
