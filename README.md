@@ -36,13 +36,13 @@ EXAMPLE :
 
 	🔴 T3rn = 1 BRN
 
-	🔴 ARB SEPO = 2 ETH
+	🔴 ARB SEPO = 10 ETH
 
-	🔴 BASE SEPO = 2 ETH
+	🔴 BASE SEPO = 10 ETH
 
-	🔴 OPT SEPO = 2 ETH
+	🔴 OPT SEPO = 10 ETH
 
-	🔴 BLAST SEPO = 2 ETH
+	🔴 BLAST SEPO = 10 ETH
 
 Bridge:
 
