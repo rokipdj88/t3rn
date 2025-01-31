@@ -19,7 +19,7 @@ loading() {
       sleep $interval
     done
   done
-  echo -ne "\r${BLUE}Proses complete.             ${NC}\n"
+  echo -ne "\r${BLUE}Proses complete.          ${NC}\n"
 }
 
 echo -e "${RED}"
@@ -56,8 +56,7 @@ curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
 grep -Po '"tag_name": "\K.*?(?=")' | \
 xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
 # Mengekstrak arsip
-print_time
-loading 3
+
 tar -xzf executor-linux-*.tar.gz
 
 # Berpindah ke direktori binary executor
