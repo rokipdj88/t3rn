@@ -4,6 +4,24 @@ RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
+
+print_time() {
+  echo -e "${BLUE}[$(date +"%Y-%m-%d %H:%M:%S")]${NC}"
+}
+
+loading() {
+  local duration=$1
+  local interval=0.2
+  local end_time=$((SECONDS+duration))
+  while [ $SECONDS -lt $end_time ]; do
+    for s in . .. ...; do
+      echo -ne "\r${BLUE}Loading processing${s}${NC} "
+      sleep $interval
+    done
+  done
+  echo -ne "\r${BLUE}Proses complete.             ${NC}\n"
+}
+
 echo -e "${RED}"
 echo -e ' ███╗   ███╗  █████╗        ██╗ ██╗ ██╗  ██╗  █████╗  ██╗  ██╗  █████╗'
 echo -e ' ████╗ ████║ ██╔══██╗       ██║ ██║ ██║ ██╔╝ ██╔══██╗ ██║  ██║ ██╔══██║'
@@ -18,17 +36,17 @@ echo -e "${RED}-----------------------------------------------------${NC}"
 echo -e "${BLUE}Buy VPS 40K on Telegram Store: https://t.me/candrapn${NC}"
 sleep 5
 
-# Menghapus file executor lama jika ada
+
 echo
-echo -e "Menghapus versi Sebelumnya "
-rm executor-linux-v0.36.0.tar.gz
-rm executor-linux-v0.37.0.tar.gz
-rm executor-linux-v0.38.0.tar.gz
-rm executor-linux-v0.39.0.tar.gz
-rm executor-linux-v0.41.0.tar.gz
+print_time
+echo -e "Deleting old version."
+loading 5
+rm executor-linux-v0.46.0.tar.gz
 rm -rf t3rn
 sleep 3
-echo -e "Mendownload versi terbaru executor"
+print_time
+echo -e "Downloading new version"
+loading 3
 echo
 mkdir -p t3rn
 cd $HOME/t3rn
@@ -38,25 +56,29 @@ curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
 grep -Po '"tag_name": "\K.*?(?=")' | \
 xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
 # Mengekstrak arsip
+print_time
+loading 3
 tar -xzf executor-linux-*.tar.gz
 
 # Berpindah ke direktori binary executor
-cd $HOME/t3rn/executor/executor/bin || { echo "Direktori tidak ditemukan!"; exit 1; }
+cd $HOME/t3rn/executor/executor/bin || { echo "Directory not found!"; exit 1; }
 
 # Meminta input manual untuk PRIVATE_KEY_LOCAL
-echo -n "Masukkan PRIVATE KEY: "
+print_time
+loading 5
+echo -n "Input your PRIVATE KEY : "
 read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
-echo "PRIVATE KEY Anda: $PRIVATE_KEY_LOCAL"
+echo "PIVATE KEY: $PRIVATE_KEY_LOCAL"
 
 # Meminta input manual untuk API ACLHEMY RPC
-echo -n "Masukkan API ALCHEMY: "
+echo -n "Input your Alchemy API KEY : "
 read KEYALCHEMY  # Input terlihat saat diketik
 
 # Memeriksa apakah KEYALCHEMY kosong
 if [ -z "$KEYALCHEMY" ]; then
-  echo "ALCHEMY API KEY kosong, melewati konfigurasi endpoint RPC untuk Alchemy."
+  echo "No API KEY, Skip Configuration Endpoint RPC for Alchemy."
 else
-  echo "ALCHEMY API KEY Anda: $KEYALCHEMY"
+  echo "Your Alchemy API KEY : $KEYALCHEMY"
   export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
   export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
   export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
@@ -64,7 +86,9 @@ else
 fi
 
 # Meminta input manual untuk EXECUTOR_MAX_L3_GAS_PRICE
-echo -n "Masukkan nilai GAS PRICE (tekan Enter untuk default 100): "
+print_time
+loading 5
+echo -n "Set GAS FEE ( Enter for default 100 ): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 
 # Jika tidak diisi, gunakan nilai default 100
@@ -72,7 +96,9 @@ if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
   EXECUTOR_MAX_L3_GAS_PRICE=100
 fi
 
-echo "GAS PRICE yang digunakan: $EXECUTOR_MAX_L3_GAS_PRICE"
+print_time
+loading 5
+echo "GAS FEE : $EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menyiapkan variabel lingkungan
 export NODE_ENV=testnet
@@ -87,6 +113,8 @@ export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export RPC_ENDPOINTS_L1RN='https://brn.calderarpc.com/'
 
 # Menjalankan executor
-echo -e "Menjalankan executor dengan konfigurasi saat ini..."
+print_time
+loading 5
+echo -e "Running the executor."
 sleep 2
 ./executor
