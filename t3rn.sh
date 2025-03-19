@@ -2,118 +2,119 @@
 # Colors
 RED='\033[0;31m'
 BLUE='\033[0;34m'
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+YELLOW='\033[0;33m'
 NC='\033[0m'
 
+# Banner
+clear
+echo -e "${BLUE}"
+echo -e "$$\   $$\ $$$$$$$$\      $$$$$$$$\           $$\                                       $$\     "
+echo -e "$$$\  $$ |\__$$  __|     $$  _____|          $$ |                                      $$ |    "
+echo -e "$$$$\ $$ |   $$ |        $$ |      $$\   $$\ $$$$$$$\   $$$$$$\  $$\   $$\  $$$$$$$\ $$$$$$\   "
+echo -e "$$ $$\$$ |   $$ |$$$$$$\ $$$$$\    \$$\ $$  |$$  __$$\  \____$$\ $$ |  $$ |$$  _____|\_$$  _|  "
+echo -e "$$ \$$$$ |   $$ |\______|$$  __|    \$$$$  / $$ |  $$ | $$$$$$$ |$$ |  $$ |\$$$$$$\    $$ |    "
+echo -e "$$ |\$$$ |   $$ |        $$ |       $$  $$<  $$ |  $$ |$$  __$$ |$$ |  $$ | \____$$\   $$ |$$\ "
+echo -e "$$ | \$$ |   $$ |        $$$$$$$$\ $$  /\$$\ $$ |  $$ |\$$$$$$$ |\$$$$$$  |$$$$$$$  |  \$$$$  |"
+echo -e "\__|  \__|   \__|        \________|\__/  \__|\__|  \__| \_______| \______/ \_______/    \____/ "
+echo -e "${NC}"
 
+echo -e "${BLUE}📢 Join our Telegram channel: https://t.me/NTExhaust${NC}"
+sleep 5
+
+# Fungsi print waktu
 print_time() {
-  echo -e "${BLUE}[$(date +"%Y-%m-%d %H:%M:%S")]${NC}"
+  echo -e "${CYAN}⏳ [$(date +"%Y-%m-%d %H:%M:%S")]${NC}"
 }
 
+# Fungsi animasi loading
 loading() {
   local duration=$1
   local interval=0.2
   local end_time=$((SECONDS+duration))
   while [ $SECONDS -lt $end_time ]; do
     for s in . .. ...; do
-      echo -ne "\r${BLUE}Loading processing${s}${NC} "
+      echo -ne "\r${CYAN}🔄 Loading processing${s}${NC} "
       sleep $interval
     done
   done
-  echo -ne "\r${BLUE}Proses complete.          ${NC}\n"
+  echo -ne "\r${CYAN}✅ Proses complete.          ${NC}\n"
 }
 
-echo -e "${RED}"
-echo -e ' ███╗   ███╗  █████╗        ██╗ ██╗ ██╗  ██╗  █████╗  ██╗  ██╗  █████╗'
-echo -e ' ████╗ ████║ ██╔══██╗       ██║ ██║ ██║ ██╔╝ ██╔══██╗ ██║  ██║ ██╔══██║'
-echo -e ' ██╔████╔██║ ███████║       ██║ ██║ █████╔╝  ███████║  █████╔╝ ██║  ██║'
-echo -e ' ██║╚██╔╝██║ ██╔══██║  ██║  ██║ ██║ ██╔═██╗  ██╔══██║    ██╔╝  ██║  ██║'
-echo -e ' ██║ ╚═╝ ██║ ██║  ██║   █████╔╝ ██║ ██║  ██╗ ██║  ██║    ██║    █████╔╝'
-echo -e ' ╚═╝     ╚═╝ ╚═╝  ╚═╝   ╚════╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝    ╚════╝'
-echo -e "${NC}"
-
-echo -e "${BLUE}Join our Telegram channel: https://t.me/NTExhaust${NC}"
-echo -e "${RED}-----------------------------------------------------${NC}"
-echo -e "${BLUE}Buy VPS 40K on Telegram Store: https://t.me/candrapn${NC}"
-sleep 5
-
-
-echo
+# Menghapus versi lama
 print_time
-echo -e "Deleting old version."
+echo -e "🗑️ Deleting old version."
 loading 5
-rm executor-linux-v0.46.0.tar.gz
+rm -f executor-linux-*.tar.gz
 rm -rf t3rn
 sleep 3
+
+# Mengunduh versi terbaru
 print_time
-echo -e "Downloading new version"
+echo -e "📥 Downloading new version"
 loading 3
-echo
 mkdir -p t3rn
 cd $HOME/t3rn
-
-# Mengunduh rilis terbaru executor
 curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
 grep -Po '"tag_name": "\K.*?(?=")' | \
 xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
-# Mengekstrak arsip
 
 tar -xzf executor-linux-*.tar.gz
+cd $HOME/t3rn/executor/executor/bin || { echo "❌ Directory not found!"; exit 1; }
 
-# Berpindah ke direktori binary executor
-cd $HOME/t3rn/executor/executor/bin || { echo "Directory not found!"; exit 1; }
-
-# Meminta input manual untuk PRIVATE_KEY_LOCAL
+# Meminta input PRIVATE_KEY_LOCAL
 print_time
 loading 5
-echo -n "Input your PRIVATE KEY : "
-read PRIVATE_KEY_LOCAL  # Input terlihat saat diketik
-echo "PIVATE KEY: $PRIVATE_KEY_LOCAL"
+echo -n "🔑 Input your PRIVATE KEY : "
+read -s PRIVATE_KEY_LOCAL
+echo ""
 
-# Meminta input manual untuk API ACLHEMY RPC
-echo -n "Input your Alchemy API KEY : "
-read KEYALCHEMY  # Input terlihat saat diketik
+echo -n "🔗 Input your Alchemy API KEY : "
+read -s KEYALCHEMY
+echo ""
 
-# Memeriksa apakah KEYALCHEMY kosong
 if [ -z "$KEYALCHEMY" ]; then
-  echo "No API KEY, Skip Configuration Endpoint RPC for Alchemy."
+  echo "⚠️ No API KEY, Skip Configuration Endpoint RPC for Alchemy."
+  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
 else
-  echo "Your Alchemy API KEY : $KEYALCHEMY"
+  echo "🔗 Your Alchemy API KEY : $KEYALCHEMY"
   export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
   export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
   export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
   export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 fi
 
-# Meminta input manual untuk EXECUTOR_MAX_L3_GAS_PRICE
-print_time
-loading 5
-echo -n "Set GAS FEE ( Enter for default 100 ): "
+# Meminta input GAS FEE
+echo -n "⛽ Set GAS FEE ( Enter for default 100 ): "
 read EXECUTOR_MAX_L3_GAS_PRICE
-
-# Jika tidak diisi, gunakan nilai default 100
 if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
   EXECUTOR_MAX_L3_GAS_PRICE=100
 fi
 
 print_time
 loading 5
-echo "GAS FEE : $EXECUTOR_MAX_L3_GAS_PRICE"
+echo "⛽ GAS FEE : $EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menyiapkan variabel lingkungan
-export NODE_ENV=testnet
+export ENVIRONMENT=testnet
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
-export EXECUTOR_PROCESS_ORDERS=true
-export EXECUTOR_PROCESS_CLAIMS=true
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
+export EXECUTOR_PROCESS_ORDERS_ENABLED=true
+export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l2rn'
 export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
 export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-export RPC_ENDPOINTS_L1RN='https://brn.calderarpc.com/'
+export RPC_ENDPOINTS_L2RN='https://b2n.rpc.caldera.xyz/'
 
-# Menjalankan executor
+# Menjalankan executor dengan screen
 print_time
 loading 5
-echo -e "Running the executor."
+echo -e "🚀 Running the executor inside a screen session."
 sleep 2
-./executor
+
+# Membuat screen session otomatis
+screen -dmS executor -c './executor; exec bash'
+echo -e "✅ Executor is now running in a screen session. Use 'screen -r executor' to attach."
