@@ -63,7 +63,7 @@ cd $HOME/t3rn/executor/executor/bin || { echo "❌ Directory not found!"; exit 1
 print_time
 loading 5
 echo -n "🔑 Input your PRIVATE KEY : "
-read -s PRIVATE_KEY_LOCAL
+read PRIVATE_KEY_LOCAL
 echo ""
 
 echo -n "🔗 Input your Alchemy API KEY : "
