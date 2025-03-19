@@ -1,26 +1,22 @@
 #!/bin/bash
-# Colors
+
 RED='\033[0;31m'
-BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-# Banner
-clear
-echo -e "${BLUE}"
-echo -e "$$\   $$\ $$$$$$$$\      $$$$$$$$\           $$\                                       $$\     "
-echo -e "$$$\  $$ |\__$$  __|     $$  _____|          $$ |                                      $$ |    "
-echo -e "$$$$\ $$ |   $$ |        $$ |      $$\   $$\ $$$$$$$\   $$$$$$\  $$\   $$\  $$$$$$$\ $$$$$$\   "
-echo -e "$$ $$\$$ |   $$ |$$$$$$\ $$$$$\    \$$\ $$  |$$  __$$\  \____$$\ $$ |  $$ |$$  _____|\_$$  _|  "
-echo -e "$$ \$$$$ |   $$ |\______|$$  __|    \$$$$  / $$ |  $$ | $$$$$$$ |$$ |  $$ |\$$$$$$\    $$ |    "
-echo -e "$$ |\$$$ |   $$ |        $$ |       $$  $$<  $$ |  $$ |$$  __$$ |$$ |  $$ | \____$$\   $$ |$$\ "
-echo -e "$$ | \$$ |   $$ |        $$$$$$$$\ $$  /\$$\ $$ |  $$ |\$$$$$$$ |\$$$$$$  |$$$$$$$  |  \$$$$  |"
-echo -e "\__|  \__|   \__|        \________|\__/  \__|\__|  \__| \_______| \______/ \_______/    \____/ "
-echo -e "${NC}"
-
-echo -e "${BLUE}📢 Join our Telegram channel: https://t.me/NTExhaust${NC}"
+echo -e '\e[34m'
+echo -e '$$\   $$\ $$$$$$$$\      $$$$$$$$\           $$\                                       $$\     '
+echo -e '$$$\  $$ |\__$$  __|     $$  _____|          $$ |                                      $$ |    '
+echo -e '$$$$\ $$ |   $$ |        $$ |      $$\   $$\ $$$$$$$\   $$$$$$\  $$\   $$\  $$$$$$$\ $$$$$$\   '
+echo -e '$$ $$\$$ |   $$ |$$$$$$\ $$$$$\    \$$\ $$  |$$  __$$\  \____$$\ $$ |  $$ |$$  _____|\_$$  _|  '
+echo -e '$$ \$$$$ |   $$ |\______|$$  __|    \$$$$  / $$ |  $$ | $$$$$$$ |$$ |  $$ |\$$$$$$\    $$ |    '
+echo -e '$$ |\$$$ |   $$ |        $$ |       $$  $$<  $$ |  $$ |$$  __$$ |$$ |  $$ | \____$$\   $$ |$$\ '
+echo -e '$$ | \$$ |   $$ |        $$$$$$$$\ $$  /\$$\ $$ |  $$ |\$$$$$$$ |\$$$$$$  |$$$$$$$  |  \$$$$  |'
+echo -e '\__|  \__|   \__|        \________|\__/  \__|\__|  \__| \_______| \______/ \_______/    \____/ '
+echo -e '\e[0m'
+echo -e "Join our Telegram channel: https://t.me/NTExhaust"
 sleep 5
 
 # Fungsi print waktu
@@ -116,5 +112,6 @@ echo -e "🚀 Running the executor inside a screen session."
 sleep 2
 
 # Membuat screen session otomatis
-screen -dmS executor -c './executor; exec bash'
+screen -dmS executor bash -c './executor; exec bash'
 echo -e "✅ Executor is now running in a screen session. Use 'screen -r executor' to attach."
+
