@@ -60,12 +60,6 @@ Bridge:
 
 # ✨ AUTO INSTALLATION
 
-
-create screen
-```bash
-screen -S t3rn
-```
-
 copy and paste into your terminal :
 
 ```bash
