@@ -75,11 +75,18 @@ if [ -z "$KEYALCHEMY" ]; then
   export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
 else
   echo "🔗 Your Alchemy API KEY : $KEYALCHEMY"
-  export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-  export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-  export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-  export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+  export RPC_ENDPOINTS='{
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"],
+    "bast": ["https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEM"],
+    "opst": ["https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"],
+    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
+}'
+#  export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+#  export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+#  export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+#  export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
+#  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 fi
 
 # Meminta input GAS FEE
@@ -103,7 +110,6 @@ export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l2rn'
 export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
 export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
-export RPC_ENDPOINTS_L2RN='https://b2n.rpc.caldera.xyz/'
 
 # Menjalankan executor dengan screen
 print_time
