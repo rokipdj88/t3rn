@@ -67,7 +67,7 @@ read PRIVATE_KEY_LOCAL
 echo ""
 
 echo -n "🔗 Input your Alchemy API KEY : "
-read -s KEYALCHEMY
+read KEYALCHEMY
 echo ""
 
 if [ -z "$KEYALCHEMY" ]; then
@@ -90,10 +90,10 @@ else
 fi
 
 # Meminta input GAS FEE
-echo -n "⛽ Set GAS FEE ( Enter for default 100 ): "
+echo -n "⛽ Set GAS FEE ( Enter for default 1000 ): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
-  EXECUTOR_MAX_L3_GAS_PRICE=100
+  EXECUTOR_MAX_L3_GAS_PRICE=1000
 fi
 
 print_time
