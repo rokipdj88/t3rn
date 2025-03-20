@@ -41,7 +41,7 @@ loading() {
 # Menghapus versi lama
 print_time
 echo -e "🗑️ Deleting old version."
-loading 5
+loading 1
 rm -f executor-linux-*.tar.gz
 rm -rf t3rn
 sleep 3
@@ -50,7 +50,7 @@ sleep 3
 
 print_time
 echo -e "📥 Downloading new version"
-loading 3
+loading 1
 
 mkdir -p $HOME/t3rn
 cd $HOME/t3rn
@@ -92,7 +92,7 @@ if [ -z "$EXECUTOR_MAX_L3_GAS_PRICE" ]; then
 fi
 
 print_time
-loading 5
+loading 2
 echo "⛽ GAS FEE : $EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menyiapkan variabel lingkungan
@@ -120,7 +120,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menjalankan executor dengan screen
 print_time
-loading 5
+loading 2
 echo -e "🚀 Running the executor inside a screen session."
 sleep 2
 
