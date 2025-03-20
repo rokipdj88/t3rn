@@ -44,7 +44,7 @@ echo -e "🗑️ Deleting old version."
 loading 1
 rm -f executor-linux-*.tar.gz
 rm -rf t3rn
-sleep 3
+sleep 2
 
 #!/bin/bash
 
@@ -79,7 +79,7 @@ echo -e "✅ Installation of version $VERSION completed!"
 
 # Meminta input PRIVATE_KEY_LOCAL
 print_time
-loading 5
+loading 2
 echo -n "🔑 Input your PRIVATE KEY : "
 read PRIVATE_KEY_LOCAL
 echo ""
