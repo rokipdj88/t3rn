@@ -46,18 +46,36 @@ rm -f executor-linux-*.tar.gz
 rm -rf t3rn
 sleep 3
 
-# Mengunduh versi terbaru
+#!/bin/bash
+
 print_time
 echo -e "📥 Downloading new version"
 loading 3
-mkdir -p t3rn
-cd $HOME/t3rn
-curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
-grep -Po '"tag_name": "\K.*?(?=")' | \
-xargs -I {} wget https://github.com/t3rn/executor-release/releases/download/{}/executor-linux-{}.tar.gz
 
+mkdir -p $HOME/t3rn
+cd $HOME/t3rn
+
+# Ask user to enter a version (press enter to get the latest version)
+read -p "Enter spesific version ex: v0.53.0 (press enter for the latest version): " VERSION
+
+if [[ -z "$VERSION" ]]; then
+    # If no version is entered, fetch the latest version from GitHub
+    VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
+        grep -Po '"tag_name": "\K.*?(?=")')
+fi
+
+echo -e "📌 Downloading version: $VERSION"
+
+# Download the file based on the selected version
+wget https://github.com/t3rn/executor-release/releases/download/$VERSION/executor-linux-$VERSION.tar.gz
+
+# Extract the file
 tar -xzf executor-linux-*.tar.gz
+
+# Navigate to the extracted directory
 cd $HOME/t3rn/executor/executor/bin || { echo "❌ Directory not found!"; exit 1; }
+
+echo -e "✅ Installation of version $VERSION completed!"
 
 # Meminta input PRIVATE_KEY_LOCAL
 print_time
