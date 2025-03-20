@@ -66,29 +66,6 @@ echo -n "🔑 Input your PRIVATE KEY : "
 read PRIVATE_KEY_LOCAL
 echo ""
 
-echo -n "🔗 Input your Alchemy API KEY : "
-read KEYALCHEMY
-echo ""
-
-if [ -z "$KEYALCHEMY" ]; then
-  echo "⚠️ No API KEY, Skip Configuration Endpoint RPC for Alchemy."
-  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
-else
-  echo "🔗 Your Alchemy API KEY : $KEYALCHEMY"
-  export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
-    "arbt": ["https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"],
-    "bast": ["https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEM"],
-    "opst": ["https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"],
-    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
-}'
-#  export RPC_ENDPOINTS_ARBT="https://arb-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-#  export RPC_ENDPOINTS_BSSP="https://base-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-#  export RPC_ENDPOINTS_BLSS="https://blast-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-#  export RPC_ENDPOINTS_OPSP="https://opt-sepolia.g.alchemy.com/v2/$KEYALCHEMY"
-#  export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
-fi
-
 # Meminta input GAS FEE
 echo -n "⛽ Set GAS FEE ( Enter for default 1000 ): "
 read EXECUTOR_MAX_L3_GAS_PRICE
@@ -107,8 +84,20 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l2rn'
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
 export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
+export EXECUTOR_ENABLE_BATCH_BIDING=true
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
+export RPC_ENDPOINTS='{
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
+    "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
+    "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
+    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"],
+    "bssp": ["https://base-sepolia-rpc.publicnode.com/", "https://sepolia.base.org"]
+}'
 export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Menjalankan executor dengan screen
