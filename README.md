@@ -2,7 +2,7 @@
       
   T3RN Executor AUTO UPDATE ( RERUN SCRIPT FOR UPDATE ) - Latest
 
-# ✨ AUTO INSTALLATION
+✨ AUTO INSTALLATION
 
 copy and paste into your terminal :
 
@@ -37,8 +37,14 @@ SEPO to UNICHAIN SEPO : [https://superbridge.app/unichain-sepolia](https://super
 
 SEPO to BLAST SEPO : send to address : 0xc644cc19d2a9388b71dd1dede07cffc73237dca8
 
+Bridge BRN V1 to arbitrum sepolia :
+[https://brn.bridge.caldera.xyz/](https://brn.bridge.caldera.xyz/)
 
-# 📝 DOCUMENT GUIDE
+Next bridge from arbitrum sepolia to B2N/l2rn :
+[https://b2n.bridge.caldera.xyz/](https://b2n.bridge.caldera.xyz/)
+
+
+📝 DOCUMENT GUIDE
 
 Official Docs : [https://docs.t3rn.io/executor/become-an-executor/binary-setup](https://docs.t3rn.io/executor/become-an-executor/binary-setup)
 
