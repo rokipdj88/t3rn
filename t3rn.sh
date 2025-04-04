@@ -109,12 +109,12 @@ export EXECUTOR_ENABLE_BATCH_BIDING=true
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "l2rn": ["https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
     "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
     "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
+    "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
     "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
-    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"],
-    "bssp": ["https://base-sepolia-rpc.publicnode.com/", "https://sepolia.base.org"]
+    "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
 }'
 export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
 
