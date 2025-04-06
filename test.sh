@@ -69,7 +69,7 @@ wget https://github.com/t3rn/executor-release/releases/download/$VERSION/executo
 }
 
 tar -xzf executor-linux-*.tar.gz
-cd $HOME/t3rn/executor/executor/bin || {
+cd $HOME/t3rn/t3rnv2/executor/executor/bin || {
   echo -e "${RED}❌ Directory executor/executor/bin not found after extraction.${NC}"
   exit 1
 }
