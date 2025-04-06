@@ -46,8 +46,6 @@ rm -f executor-linux-*.tar.gz
 rm -rf t3rn
 sleep 2
 
-git clone https://github.com/rokipdj88/t3rn.git && cd t3rn
-
 print_time
 echo -e "📥 Downloading new version"
 loading 1
