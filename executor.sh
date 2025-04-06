@@ -54,7 +54,8 @@ mkdir -p $HOME/t3rn
 cd $HOME/t3rn
 
 # Input versi
-read -p "Enter spesific version ex: v0.53.0 (press enter for the latest version): " VERSION
+echo -e "LIST EXECUTOR VERSION HERE : https://github.com/t3rn/executor-release/releases/"
+read -p "Enter spesific version ex: v0.53.1 (press enter for the latest version): " VERSION
 if [[ -z "$VERSION" ]]; then
     VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | \
         grep -Po '"tag_name": "\K.*?(?=")')
@@ -78,7 +79,7 @@ echo -e "${GREEN}✅ Installation of version $VERSION completed!${NC}"
 print_time
 loading 2
 echo -n "🔑 Input your PRIVATE KEY : "
-read -s PRIVATE_KEY_LOCAL
+read PRIVATE_KEY_LOCAL
 echo ""
 
 # GAS FEE
