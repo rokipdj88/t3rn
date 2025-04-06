@@ -106,7 +106,7 @@ if [[ "$USE_ALCHEMY" == "y" || "$USE_ALCHEMY" == "Y" ]]; then
         "arbt": ["https://arb-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "bast": ["https://base-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "blst": ["https://blast-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
-        "opst": ["https://opt-sepolia.g.alchemy.com/'"$API_ALCHEMY"'"],
+        "opst": ["https://opt-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "unit": ["https://unichain-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"]
     }'
 else
