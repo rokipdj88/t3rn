@@ -7,7 +7,7 @@
 copy and paste into your terminal :
 
 ```bash
-wget https://github.com/rokipdj88/t3rn/raw/main/t3rn.sh -O t3rn.sh && chmod +x t3rn.sh && ./t3rn.sh
+wget https://github.com/rokipdj88/t3rn/raw/main/executor.sh -O executor.sh && chmod +x executor.sh && ./executor.sh
 ```
 
 - 🔐 Input PrivateKey
