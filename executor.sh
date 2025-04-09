@@ -106,7 +106,8 @@ if [[ "$USE_ALCHEMY" == "y" || "$USE_ALCHEMY" == "Y" ]]; then
         "bast": ["https://base-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "blst": ["https://blast-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "opst": ["https://opt-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
-        "unit": ["https://unichain-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"]
+        "unit": ["https://unichain-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
+        "mont": ["https://testnet-rpc.monad.xyz"]
     }'
 else
     export RPC_ENDPOINTS='{
@@ -115,7 +116,8 @@ else
         "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
         "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
         "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
-        "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
+        "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"],
+        "mont": ["https://testnet-rpc.monad.xyz"]
     }'
 fi
 
@@ -126,7 +128,7 @@ export LOG_PRETTY=false
 export EXECUTOR_PROCESS_BIDS_ENABLED=true
 export EXECUTOR_PROCESS_ORDERS_ENABLED=true
 export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,unichain-sepolia,l2rn'
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn,blast-sepolia,unichain-sepolia,monad-testnet'
 export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
 export EXECUTOR_ENABLE_BATCH_BIDING=true
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
