@@ -107,7 +107,7 @@ if [[ "$USE_ALCHEMY" == "y" || "$USE_ALCHEMY" == "Y" ]]; then
         "blst": ["https://blast-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "opst": ["https://opt-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
         "unit": ["https://unichain-sepolia.g.alchemy.com/v2/'"$API_ALCHEMY"'"],
-        "mont": ["https://monad-testnet.g.alchemy.com/v2/'"$API_ALCHEMY"'"]
+        "mont": ["https://testnet-rpc.monad.xyz"]
     }'
 else
     export RPC_ENDPOINTS='{
