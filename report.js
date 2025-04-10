@@ -27,13 +27,15 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
         blst: [`https://blast-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
         opst: [`https://opt-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
         unit: [`https://unichain-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
+        mont: ["https://testnet-rpc.monad.xyz"]
       }
     : {
         arbt: ["https://arbitrum-sepolia.drpc.org"],
         bast: ["https://base-sepolia-rpc.publicnode.com"],
         blst: ["https://sepolia.blast.io"],
         opst: ["https://sepolia.optimism.io"],
-        unit: ["https://unichain-sepolia.drpc.org"]
+        unit: ["https://unichain-sepolia.drpc.org"],
+        mont: ["https://testnet-rpc.monad.xyz"]
       };
 
   const chainEmojis = {
@@ -42,7 +44,8 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
     blst: "🚀 Blast",
     opst: "⚡ Optimism",
     unit: "🪐 Unichain",
-    brn:  "🔥 BRN"
+    brn:  "🔥 BRN",
+    mont: "📀 Monad"
   };
 
   async function getBalance(providerUrl) {
