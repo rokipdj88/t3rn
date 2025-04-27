@@ -13,35 +13,23 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
 
 (async () => {
   const address = await question("🏦 Enter your wallet address: ");
-  const TELEGRAM_TOKEN = await question("🤖 Enter your Telegram Bot Token: ");
   const CHAT_ID = await question("💬 Enter your Telegram Chat ID: ");
-  const apiAlchemy = await question("🔑 Enter your Alchemy API Key (leave blank to skip): ");
   rl.close();
 
+  const TELEGRAM_TOKEN = "8122224951:AAGdnZYX_b5rUfxW658fp3DpMli1rQ0qXFU";
   const BRN_RPC = "https://b2n.rpc.caldera.xyz/http";
 
-  const RPC_ENDPOINTS = apiAlchemy
-    ? {
-        arbt: [`https://arb-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
-        bast: [`https://base-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
-        blst: [`https://blast-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
-        opst: [`https://opt-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
-        unit: [`https://unichain-sepolia.g.alchemy.com/v2/${apiAlchemy}`],
-        mont: ["https://testnet-rpc.monad.xyz"]
-      }
-    : {
-        arbt: ["https://arbitrum-sepolia.drpc.org"],
-        bast: ["https://base-sepolia-rpc.publicnode.com"],
-        blst: ["https://sepolia.blast.io"],
-        opst: ["https://sepolia.optimism.io"],
-        unit: ["https://unichain-sepolia.drpc.org"],
-        mont: ["https://testnet-rpc.monad.xyz"]
-      };
+  const RPC_ENDPOINTS = {
+    arbt: ["https://arbitrum-sepolia.drpc.org"],
+    bast: ["https://base-sepolia-rpc.publicnode.com"],
+    opst: ["https://sepolia.optimism.io"],
+    unit: ["https://unichain-sepolia.drpc.org"],
+    mont: ["https://testnet-rpc.monad.xyz"]
+  };
 
   const chainEmojis = {
     arbt: "🧠 Arbitrum",
     bast: "🦴 Base",
-    blst: "🚀 Blast",
     opst: "⚡ Optimism",
     unit: "🪐 Unichain",
     brn:  "🔥 BRN",
@@ -85,8 +73,7 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
 
   async function checkAndSend() {
     let message = 
-`📝 *NTExhaust REPORT* 📝
-🔥 *T3rn Executor* 🔥
+`🚀 T3RN EXECUTOR - BOT REPORT 📝
 
 💼 *Wallet Address:*
 \`${address}\`
