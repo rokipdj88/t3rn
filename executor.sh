@@ -116,7 +116,6 @@ else
         "mont": ["https://testnet-rpc.monad.xyz"],
         "opst": ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
         "unit": ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
-}'
     }'
 fi
 
