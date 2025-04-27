@@ -19,22 +19,20 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
   const TELEGRAM_TOKEN = '8122224951:AAGdnZYX_b5rUfxW658fp3DpMli1rQ0qXFU';
 
   const RPC_ENDPOINTS = {
-    l2rn: ["https://t3rn-b2n.blockpi.network/v1/rpc/public", "https://b2n.rpc.caldera.xyz/http"],
-    arbt: ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
-    bast: ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
-    mont: ["https://testnet-rpc.monad.xyz"],
-    opst: ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
-    unit: ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
-  };
+  arbt: ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
+  bast: ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
+  mont: ["https://testnet-rpc.monad.xyz"],
+  opst: ["https://sepolia.optimism.io", "https://optimism-sepolia.drpc.org"],
+  unit: ["https://unichain-sepolia.drpc.org", "https://sepolia.unichain.org"]
+};
 
-  const chainEmojis = {
-    l2rn: "💠 T3rn",
-    arbt: "🧠 Arbitrum",
-    bast: "🦴 Base",
-    mont: "📀 Monad",
-    opst: "⚡ Optimism",
-    unit: "🪐 Unichain"
-  };
+const chainEmojis = {
+  arbt: "🧠 Arbitrum",
+  bast: "🦴 Base",
+  mont: "📀 Monad",
+  opst: "⚡ Optimism",
+  unit: "🪐 Unichain"
+};
 
   async function getBalance(urls) {
     for (const url of urls) {
