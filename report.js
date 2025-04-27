@@ -59,17 +59,18 @@ const question = (query) => new Promise(resolve => rl.question(query, resolve));
   }
 
   async function sendToTelegram(text) {
-    try {
-      await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
-        chat_id: CHAT_ID,
-        text: text,
-        parse_mode: "Markdown"
-      });
-      console.log("✅ Message sent to Telegram.");
-    } catch (err) {
-      console.error("❌ Failed to send Telegram message:", err.message);
-    }
+  try {
+    await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+      chat_id: CHAT_ID,
+      text: text,
+      // parse_mode: "Markdown" // <-- comment dulu sementara
+    });
+    console.log("✅ Message sent to Telegram.");
+  } catch (err) {
+    console.error("❌ Failed to send Telegram message:");
+    console.error(err.response ? err.response.data : err.message);
   }
+}
 
   async function checkAndSend() {
     let message = 
